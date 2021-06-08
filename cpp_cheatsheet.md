@@ -20,3 +20,9 @@
 ## String
 
 - `str.length()`
+
+## Vectors
+
+- Initialization
+    - `vector<int> vect{ 10, 20, 30 }; // [10, 20, 30]`
+    - `vector<int> vect(3, 11); // [11, 11, 11]`
