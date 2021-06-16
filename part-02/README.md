@@ -1,3 +1,12 @@
+## Contents
+
+This part contains problems on these topics:
+- Fast and slow pointers
+- In-place reversal of linked list
+- Two pointers
+
+## Notes
+
 - As a general rule, whenever you are about to change the `next` of some element,
 be sure to store the original `next` in some (temporary) variable.
 - Recursive solutions are `O(n)` space anyways, because of stack space.
