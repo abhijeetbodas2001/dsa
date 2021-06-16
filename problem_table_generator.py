@@ -45,8 +45,16 @@ data.sort(key=difficulty_comparator_key)
 # Clear contents of file
 open('dump.txt', 'w').close()
 
+# Print contents
+print("## Contents\n", file=open("dump.txt", "a"))
+print("This part contains problems on these topics:", file=open("dump.txt", "a"))
+for tag in problem_tags_wanted:
+    print(f"- {tag}", file=open("dump.txt", "a"))
+
+print("\n\n## Notes\n", file=open("dump.txt", "a"))
+
 # Print table header
-print("## Problems\n", file=open("dump.txt", "a"))
+print("\n\n## Problems\n", file=open("dump.txt", "a"))
 print("|Serial number|Difficulty|Problem|Solution(s)|", file=open("dump.txt", "a"))
 print("|-|-|-|-|", file=open("dump.txt", "a"))
 
