@@ -1,3 +1,15 @@
+## Pointers
+```
+// This is wrong! (will not allocate memory)
+int *my_var = -1;
+
+// Use this-
+int *my_var = new int(-1);
+
+// Or this-
+int my_var = -1;    // and they use `&my_var` to get the pointer
+```
+
 ## Vectors
 
 ```
@@ -30,6 +42,18 @@ myQueue.back();     // Reference to last element
 
 myQueue.push(2);    // Adds element to end of queue
 myQueue.pop();      // Deletes first element of queue and DOES NOT RETURN IT
+```
+
+## Stack
+
+```
+stack<int> myStack;
+
+stack.push(21);
+
+stack.top();    // 21
+
+stack.pop();    // Does not return the popped element!
 ```
 
 ## Sets

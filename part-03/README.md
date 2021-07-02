@@ -8,18 +8,19 @@ This part contains problems on these topics:
 
 ## Notes
 
-None yet.
+- For tracking max, min values, use pointers/pass-by-reference in recursive functions.
+No need to block the return value for this.
 
 ## Problems
 
-(All problems here are TODOs, so solutions links will give `404`s)
+(Some problems here are TODOs, so solutions links may give `404`s)
 
 |Serial number|Difficulty|Problem|Solution(s)|
 |-|-|-|-|
 |01|Easy|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](/part-03/1_01_average-of-levels-in-binary-tree.cpp)|
-|02|Easy|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](/part-03/1_02_minimum-depth-of-binary-tree.cpp)|
+|02|Easy|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution (DFS)](/part-03/1_02_minimum-depth-of-binary-tree_DFS.cpp), [Solution (BFS)](/part-03/1_02_minimum-depth-of-binary-tree_BFS.cpp)|
 |03|Easy|[Same Tree](https://leetcode.com/problems/same-tree/)|[Solution](/part-03/1_03_same-tree.cpp)|
-|04|Easy|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution](/part-03/1_04_path-sum.cpp)|
+|04|Easy|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution (Recursive DFS)](/part-03/1_04_path-sum_dfs-recursive.cpp), [Solution (Iterative DFS)](/part-03/1_04_path-sum_dfs-iterative.cpp)|
 |05|Easy|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](/part-03/1_05_diameter-of-binary-tree.cpp)|
 |06|Easy|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](/part-03/1_06_merge-two-binary-trees.cpp)|
 |07|Easy|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[Solution](/part-03/1_07_maximum-depth-of-binary-tree.cpp)|
