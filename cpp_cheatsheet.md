@@ -10,6 +10,25 @@ int *my_var = new int(-1);
 int my_var = -1;    // and they use `&my_var` to get the pointer
 ```
 
+## Misc
+```
+cout<<INT_MAX;  // +2147483647
+cout<<INT_MIN;  // -2147483647
+```
+
+## Arrays
+```
+int myArray[3] = {1, 2, 3}; // [1, 2, 3]
+
+int myArray[] = {1, 2, 3, 4}    // [1, 2, 3, 4]
+
+int myArray[6] = {1, 2, 3, 4}   // [1, 2, 3, 4, 0, 0]
+
+int myArray[3]; // [garbage, garbage, garbage]
+
+// Name of the array is also a pointer to the first element of array.
+```
+
 ## Vectors
 
 ```
@@ -25,7 +44,7 @@ myVector.size();
 ```
 string myString = "abcd";
 
-myString.length();
+myString.length();  // 4
 ```
 
 ## Queue
