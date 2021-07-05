@@ -12,13 +12,13 @@ None yet.
 
 ## Problems
 
-(All problems here are TODOs, so solution links will give `404`s)
+(Some problems here are TODOs, so solution links may give `404`s)
 
 |Serial number|Difficulty|Problem|Solution(s)|
 |-|-|-|-|
 |01|Easy|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](/part-04/1_01_climbing-stairs.cpp)|
 |02|Easy|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](/part-04/1_02_best-time-to-buy-and-sell-stock.cpp)|
-|03|Easy|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](/part-04/1_03_maximum-subarray.cpp)|
+|03|Easy|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution (DP)](/part-04/1_03_maximum-subarray_dp.cpp), [Solution (DnC, TODO)](/part-04/1_03_maximum-subarray_dnc.cpp)|
 |04|Easy|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Solution](/part-04/1_04_range-sum-query---immutable.cpp)|
 |05|Easy|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](/part-04/1_05_counting-bits.cpp)|
 |06|Medium|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](/part-04/2_06_target-sum.cpp)|
