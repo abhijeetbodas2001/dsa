@@ -8,6 +8,16 @@ int *my_var = new int(-1);
 
 // Or this-
 int my_var = -1;    // and they use `&my_var` to get the pointer
+
+// Incrementation
+int count = -1;
+void increment(int* count) {
+    // *count++; is wrong ❌
+    *count = *count + 1;    // ✅✔
+    // Use either the abover, or `(*count)++`
+}
+
+increment(&count);
 ```
 
 ## Misc

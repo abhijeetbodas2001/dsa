@@ -27,7 +27,7 @@ No need to block the return value for this.
 |08|Easy|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](/part-03/1_08_lowest-common-ancestor-of-a-binary-search-tree.cpp)|
 |09|Easy|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[Solution](/part-03/1_09_subtree-of-another-tree.cpp)|
 |10|Easy|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](/part-03/1_10_invert-binary-tree.cpp)|
-|11|Medium|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](/part-03/2_11_target-sum.cpp)|
+|11|Medium|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution (brute force)](/part-03/2_11_target-sum_brute-force.cpp), [Solution (DP)](/part-03/2_11_target-sum_dp.cpp)|
 |12|Medium|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](/part-03/2_12_clone-graph.cpp)|
 |13|Medium|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](/part-03/2_13_pacific-atlantic-water-flow.cpp)|
 |14|Medium|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Solution](/part-03/2_14_number-of-islands.cpp)|
