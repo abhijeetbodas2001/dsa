@@ -78,11 +78,13 @@ myQueue.pop();      // Deletes first element of queue and DOES NOT RETURN IT
 ```
 stack<int> myStack;
 
-stack.push(21);
+myStack.push(21);
 
-stack.top();    // 21
+myStack.size();     // 1
 
-stack.pop();    // Does not return the popped element!
+myStack.top();    // 21
+
+myStack.pop();    // Does not return the popped element!
 ```
 
 ## Sets
@@ -99,6 +101,8 @@ if (mySet.find(key) == mySet.end()) {
 } else {
     // `key` is not present in set
 }
+
+mySet.erase(1);     // deletes `1` from the set
 ```
 
 ## Maps

@@ -6,10 +6,25 @@ This part contains problems on these topics:
 - Graph
 
 
+## Algorithms
+
+- DFS
+    - [In-order iterative DFS traversal of binary tree](/vanilla-algorithms/iterative_in-order_dfs.cpp)
+
 ## Notes
+
+- For BST, the best solution one can get is usually `O(h)` time (not `O(N)`),
+so try to get to that. In-order traversals are great for BST's.
 
 - For tracking max, min values, use pointers/pass-by-reference in recursive functions.
 No need to block the return value for this.
+
+- Path-dependent problems are difficult to solve iteratively. You need to attach some data for
+the path on each node in the stack, which can blow up the space complexity. Best to do recursively.
+Example:
+    - Path sums
+    - Finding cycles in directed graphs (need to search in recursion stack)
+
 
 ## Problems
 
@@ -29,12 +44,12 @@ No need to block the return value for this.
 |10|Easy|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](/part-03/1_10_invert-binary-tree.cpp)|
 |11|Medium|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution (brute force)](/part-03/2_11_target-sum_brute-force.cpp), [Solution (DP)](/part-03/2_11_target-sum_dp.cpp)|
 |12|Medium|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](/part-03/2_12_clone-graph.cpp)|
-|13|Medium|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](/part-03/2_13_pacific-atlantic-water-flow.cpp)|
+|13|Medium|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution (TODO)](/part-03/2_13_pacific-atlantic-water-flow.cpp)|
 |14|Medium|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Solution](/part-03/2_14_number-of-islands.cpp)|
-|15|Medium|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|[Solution](/part-03/2_15_graph-valid-tree.cpp)|
-|16|Medium|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](/part-03/2_16_number-of-connected-components-in-an-undirected-graph.cpp)|
+|15|Medium|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|Needs premium|
+|16|Medium|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|Needs premium|
 |17|Medium|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|[Solution](/part-03/2_17_kth-smallest-element-in-a-bst.cpp)|
-|18|Medium|[Course Schedule](https://leetcode.com/problems/course-schedule/)|[Solution](/part-03/2_18_course-schedule.cpp)|
+|18|Medium|[Course Schedule](https://leetcode.com/problems/course-schedule/)|[Solution (Cycle detection)](/part-03/2_18_course-schedule_cycle-detection.cpp) TODO: Topological sort|
 |19|Medium|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](/part-03/2_19_course-schedule-ii.cpp)|
 |20|Medium|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)|[Solution](/part-03/2_20_minimum-height-trees.cpp)|
 |21|Medium|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)|[Solution](/part-03/2_21_sequence-reconstruction.cpp)|
