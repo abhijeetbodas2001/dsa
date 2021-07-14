@@ -26,8 +26,8 @@ None yet.
 |08|Medium|[House Robber II](https://leetcode.com/problems/house-robber-ii/)|[Solution](/part-04/2_08_house-robber-ii.cpp)|
 |09|Medium|[Coin Change](https://leetcode.com/problems/coin-change/)|[Solution](/part-04/2_09_coin-change.cpp)|
 |10|Medium|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[Solution](/part-04/2_10_maximum-product-subarray.cpp)|
-|11|Medium|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](/part-04/2_11_longest-increasing-subsequence.cpp)|
-|12|Medium|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution](/part-04/2_12_longest-palindromic-substring.cpp)|
+|11|Medium|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution (O(n^2) time)](/part-04/2_11_longest-increasing-subsequence_basic.cpp),[Solution (O(n) time) TODO](/part-04/2_11_longest-increasing-subsequence_followup.cpp)|
+|12|Medium|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution (DP, O(n^2) time & space)](/part-04/2_12_longest-palindromic-substring_dp.cpp), [Solution (Center-based, O(n^2) time, O(1) space](/part-04/2_12_longest-palindromic-substring_center.cpp), [Solution (Manacher algo, O(n) time (TODO)](/part-04/2_12_longest-palindromic-substring_manacher.cpp)|
 |13|Medium|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](/part-04/2_13_word-break.cpp)|
 |14|Medium|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution](/part-04/2_14_combination-sum-iv.cpp)|
 |15|Medium|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](/part-04/2_15_decode-ways.cpp)|
