@@ -1,5 +1,5 @@
 ## Pointers
-```
+```cpp
 // This is wrong! (will not allocate memory)
 int *a = -1;
 
@@ -10,7 +10,7 @@ int *a = new int(-1);
 int a = -1;    // and they use `&a` to get the pointer
 ```
 
-```
+```cpp
 // Incrementation
 
 void increment(int* a) {
@@ -26,13 +26,13 @@ increment(&a);
 ```
 
 ## Misc
-```
+```cpp
 cout << INT_MAX;  // +2147483647
 cout << INT_MIN;  // -2147483647
 ```
 
 ## Arrays
-```
+```cpp
 int a[3] = {1, 2, 3};       // [1, 2, 3]
 
 int b[] = {1, 2, 3, 4}      // [1, 2, 3, 4]
@@ -46,7 +46,7 @@ int d[3];                   // [garbage, garbage, garbage]
 
 ## Vectors
 
-```
+```cpp
 vector<int> v1{ 3, 2, 4 };      // [3, 2, 4]
 vector<int> v2(4, 7);          // [7, 7, 7, 7]
 
@@ -59,7 +59,7 @@ reverse(v1.begin(), v1.end());  // v1 gets reversed in-place
 
 ## Strings
 
-```
+```cpp
 string s = "abcd";
 
 s.length();  // 4
@@ -67,7 +67,7 @@ s.length();  // 4
 
 ## Queue
 
-```
+```cpp
 queue<int> q;
 
 q.push(1);
@@ -85,7 +85,7 @@ q.back();     // 3 (last in)
 
 ## Stack
 
-```
+```cpp
 stack<int> s;
 
 s.push(1);
@@ -101,7 +101,7 @@ s.pop();    // deletes 3, does not return it
 
 ## Sets
 
-```
+```cpp
 unordered_set<int> s;
 
 // All following operations are O(1) on average
@@ -117,7 +117,7 @@ s.find(1);      // s.end()
 
 ## Maps
 
-```
+```cpp
 unordered_map<string, int> m;
 
 m["key"] = 101
