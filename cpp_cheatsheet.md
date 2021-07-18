@@ -1,40 +1,45 @@
 ## Pointers
 ```
 // This is wrong! (will not allocate memory)
-int *my_var = -1;
+int *a = -1;
 
 // Use this-
-int *my_var = new int(-1);
+int *a = new int(-1);
 
 // Or this-
-int my_var = -1;    // and they use `&my_var` to get the pointer
+int a = -1;    // and they use `&a` to get the pointer
+```
 
+```
 // Incrementation
-int count = -1;
-void increment(int* count) {
-    // *count++; is wrong ❌
-    *count = *count + 1;    // ✅✔
-    // Use either the abover, or `(*count)++`
+
+void increment(int* a) {
+    // *a++; is wrong ❌
+
+    *a = *a + 1;    // ✅✔
+
+    // Use either the above, or `(*a)++`
 }
 
-increment(&count);
+int a = -1;
+increment(&a);
 ```
 
 ## Misc
 ```
-cout<<INT_MAX;  // +2147483647
-cout<<INT_MIN;  // -2147483647
+cout << INT_MAX;  // +2147483647
+cout << INT_MIN;  // -2147483647
 ```
 
 ## Arrays
 ```
-int myArray[3] = {1, 2, 3}; // [1, 2, 3]
+int a[3] = {1, 2, 3};       // [1, 2, 3]
 
-int myArray[] = {1, 2, 3, 4}    // [1, 2, 3, 4]
+int b[] = {1, 2, 3, 4}      // [1, 2, 3, 4]
 
-int myArray[6] = {1, 2, 3, 4}   // [1, 2, 3, 4, 0, 0]
+int c[6] = {1, 2, 3, 4}     // [1, 2, 3, 4, 0, 0]
 
-int myArray[3]; // [garbage, garbage, garbage]
+int d[3];                   // [garbage, garbage, garbage]
 
 // Name of the array is also a pointer to the first element of array.
 ```
@@ -42,80 +47,85 @@ int myArray[3]; // [garbage, garbage, garbage]
 ## Vectors
 
 ```
-// Initialization
-vector<int> myVector1{ 10, 20, 30 };    // [10, 20, 30]
-vector<int> myVector2(3, 11);           // [11, 11, 11]
+vector<int> v1{ 3, 2, 4 };      // [3, 2, 4]
+vector<int> v2(4, 7);          // [7, 7, 7, 7]
 
-myVector.size();
+v1.size();      // 3
+
+sort(v1.begin(), v1.end());     // v1 becomes [2, 3, 4]
+
+reverse(v1.begin(), v1.end());  // v1 gets reversed in-place
 ```
 
 ## Strings
 
 ```
-string myString = "abcd";
+string s = "abcd";
 
-myString.length();  // 4
+s.length();  // 4
 ```
 
 ## Queue
 
 ```
-queue<int> myQueue;
+queue<int> q;
 
-myQueue.empty();
+q.push(1);
+q.push(2);
+q.push(3);
 
-myQueue.size();
+q.size();     // 3
+q.empty();    // false
 
-myQueue.front();    // Reference to first element
-myQueue.back();     // Reference to last element
+q.front();    // returnd 1, does not delete it
+q.pop();      // deletes 1, does not return it
 
-myQueue.push(2);    // Adds element to end of queue
-myQueue.pop();      // Deletes first element of queue and DOES NOT RETURN IT
+q.back();     // 3 (last in)
 ```
 
 ## Stack
 
 ```
-stack<int> myStack;
+stack<int> s;
 
-myStack.push(21);
+s.push(1);
+s.push(2);
+s.push(3);
 
-myStack.size();     // 1
+s.size();   // 3
+s.empty();  // false
 
-myStack.top();    // 21
-
-myStack.pop();    // Does not return the popped element!
+s.top();    // returns 3, does not delete it
+s.pop();    // deletes 3, does not return it
 ```
 
 ## Sets
 
 ```
-unordered_set<int> mySet;   // Initialization
+unordered_set<int> s;
 
 // All following operations are O(1) on average
 
-mySet.insert(1)
+s.insert(1);
 
-if (mySet.find(key) == mySet.end()) {
-    // `key` is present in set
-} else {
-    // `key` is not present in set
-}
+s.find(1)       // != s.end()
 
-mySet.erase(1);     // deletes `1` from the set
+s.erase(1);     // deletes `1` from the set
+
+s.find(1);      // s.end()
 ```
 
 ## Maps
 
 ```
-unordered_map<string, int> myMap;
+unordered_map<string, int> m;
 
-myMap["some_key"] = 101
+m["key"] = 101
 
 // `find` is same as that of set structure
 
 // Traversing an unordered map
-for (auto x : myMap) {
-    cout << x.first << " " << x.second << endl;
+for (auto x : m) {
+    cout << x.first << " " << x.second << endl;     // key <space> 101
 }
 ```
