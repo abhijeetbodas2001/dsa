@@ -8,8 +8,8 @@ This part contains problems on these topics:
 
 ## Algorithms
 
-- DFS
-    - [In-order iterative DFS traversal of binary tree](/vanilla-algorithms/iterative_in-order_dfs.cpp)
+- [In-order iterative DFS](/vanilla-algorithms/iterative_in-order_dfs.cpp)
+- [Breadth first search](/vanilla-algorithms/bfs.cpp)
 
 ## Notes
 
