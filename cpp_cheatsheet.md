@@ -55,6 +55,14 @@ v1.size();      // 3
 sort(v1.begin(), v1.end());     // v1 becomes [2, 3, 4]
 
 reverse(v1.begin(), v1.end());  // v1 gets reversed in-place
+
+// about resize
+vector<int> v;
+
+v.resize(3, 4); // [4, 4, 4]
+
+v.resize(3, 5); // Will not do anything! (because size already is 3)
+// don't use resize to set all values to somevalue
 ```
 
 ## Strings
