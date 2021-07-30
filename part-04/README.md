@@ -31,8 +31,8 @@ None yet.
 |13|Medium|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](/part-04/2_13_word-break.cpp)|
 |14|Medium|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution (recursive)](/part-04/2_14_combination-sum-iv_recursive.cpp), [Solution (iterative)](/part-04/2_14_combination-sum-iv_iterative.cpp)|
 |15|Medium|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](/part-04/2_15_decode-ways.cpp)|
-|16|Medium|[Unique Paths](https://leetcode.com/problems/unique-paths/)|[Solution](/part-04/2_16_unique-paths.cpp)|
-|17|Medium|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution](/part-04/2_17_jump-game.cpp)|
+|16|Medium|[Unique Paths](https://leetcode.com/problems/unique-paths/)|[Solution (recursive)](/part-04/2_16_unique-paths_recursive.cpp), [Solution (iterative O(m*n) space)](/part-04/2_16_unique-paths_iterative.cpp), [Solution (iterative, O(n) space)](/part-04/2_16_unique-paths_iterative-low-space.cpp)|
+|17|Medium|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution (DP)](/part-04/2_17_jump-game_dp.cpp), [Solution (Greedy)](/part-04/2_17_jump-game_greedy.cpp)|
 |18|Medium|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](/part-04/2_18_palindromic-substrings.cpp)|
 |19|Medium|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)|[Solution](/part-04/2_19_number-of-longest-increasing-subsequence.cpp)|
 |20|Medium|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|[Solution](/part-04/2_20_partition-equal-subset-sum.cpp)|
