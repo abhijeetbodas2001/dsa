@@ -17,7 +17,7 @@ public:
         for (int i = 1; i < len; i++) {
 
             // Bottom-up DP
-            for (int j = 0; i < i; j++) {
+            for (int j = 0; j < i; j++) {
 
                 if (nums[j] < nums[i]) {
                     // We can extend the subsequence ending at `j` with `i`
