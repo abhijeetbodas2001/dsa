@@ -8,7 +8,38 @@ This part contains problems on these topics:
 
 ## Notes
 
-None yet.
+### When to use DP?
+
+1. When asked to count something, like the number of ways in which something can be done
+1. Minimize or maximize a certain value
+1. YES/NO questions: is it possible to ... ?
+
+For `2.` and `3.`, it is often possible that the problem can be solved using a simpler **greedy** algorithm.
+
+### Implementing DP
+
+DP algorithms can be implemented both iteratively and recursively.
+The iterative solution is generally more concise and faster (because of lesser overhead),
+but the recursive solution is easier to implement/understand. Iterative solutions are also
+easier to modify/improve, so prefer the **iterative method**.
+
+But before implementing anything at all, one must come up with a recurrence relation, and to
+do that one must define the state / what exactly store.  
+It is important to ask, at each `state`, the question:
+```
+When at a certain position / after some number of steps, what is important so far?
+```
+
+When the `state` is decided / defined, then think about how the state relates to
+a smaller state, and try to write it as a combination of smaller states.
+IOW, think about the question "how could I have gotten to this state?"
+Often, drawing arrow diagrams helps in thinking about this.
+
+
+### Complexity
+
+When analysing the time complexity of the implementation, it is helpful to draw a tree
+of the function calls for a recursive implementation.
 
 ## Problems
 
@@ -35,9 +66,9 @@ None yet.
 |17|Medium|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution (DP)](/part-04/2_17_jump-game_dp.cpp), [Solution (Greedy)](/part-04/2_17_jump-game_greedy.cpp)|
 |18|Medium|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](/part-04/2_18_palindromic-substrings.cpp)|
 |19|Medium|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)|[Solution](/part-04/2_19_number-of-longest-increasing-subsequence.cpp)|
-|20|Medium|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|[Solution](/part-04/2_20_partition-equal-subset-sum.cpp)|
+|20|Medium|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|[Solution (O(n * sum) space)](/part-04/2_20_partition-equal-subset-sum_high-space.cpp), [Solution (O(n) space)](/part-04/2_20_partition-equal-subset-sum_low-space.cpp)|
 |21|Medium|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Solution](/part-04/2_21_partition-to-k-equal-sum-subsets.cpp)|
-|22|Medium|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[Solution](/part-04/2_22_best-time-to-buy-and-sell-stock-with-cooldown.cpp)|
+|22|Medium|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[Solution (O(n^2))](/part-04/2_22_best-time-to-buy-and-sell-stock-with-cooldown_on2.cpp), [Solution (O(n))](/part-04/2_22_best-time-to-buy-and-sell-stock-with-cooldown_on.cpp)|
 |23|Medium|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)|[Solution](/part-04/2_23_kth-smallest-element-in-a-sorted-matrix.cpp)|
 |24|Medium|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[Solution](/part-04/2_24_find-k-pairs-with-smallest-sums.cpp)|
 |25|Medium|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](/part-04/2_25_meeting-rooms-ii.cpp)|
