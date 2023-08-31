@@ -1,10 +1,9 @@
 ## Contents
 
 This part contains problems on these topics:
-- Arrays
-- Binary Search
-- Bit Manipulation
-- Sorting
+- Heap
+- Greedy
+- Dynamic Programming
 
 
 ## Notes
@@ -15,33 +14,44 @@ This part contains problems on these topics:
 
 |Serial number|Difficulty|Problem|Solution(s)|
 |-|-|-|-|
-|01|Easy|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[Solution](/part-01/1_01_contains-duplicate.cpp)|
-|02|Easy|[Missing Number](https://leetcode.com/problems/missing-number)|[Solution](/part-01/1_02_missing-number.cpp)|
-|03|Easy|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array)|[Solution](/part-01/1_03_find-all-numbers-disappeared-in-an-array.cpp)|
-|04|Easy|[Single Number](https://leetcode.com/problems/single-number)|[Solution](/part-01/1_04_single-number.cpp)|
-|05|Easy|[Counting Bits](https://leetcode.com/problems/counting-bits)|[Solution](/part-01/1_05_counting-bits.cpp)|
-|06|Easy|[Binary Search](https://leetcode.com/problems/binary-search)|[Solution](/part-01/1_06_binary-search.cpp)|
-|07|Easy|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)|[Solution](/part-01/1_07_find-smallest-letter-greater-than-target.cpp)|
-|08|Easy|[Majority Element](https://leetcode.com/problems/majority-element)|[Solution](/part-01/1_08_majority-element.cpp)|
-|09|Easy|[Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array)|[Solution](/part-01/1_09_convert-1d-array-into-2d-array.cpp)|
-|10|Easy|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[Solution](/part-01/1_10_move-zeroes.cpp)|
-|11|Medium|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|[Solution](/part-01/2_11_product-of-array-except-self.cpp)|
-|12|Medium|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|[Solution](/part-01/2_12_find-the-duplicate-number.cpp)|
-|13|Medium|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)|[Solution](/part-01/2_13_find-all-duplicates-in-an-array.cpp)|
-|14|Medium|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|[Solution](/part-01/2_14_set-matrix-zeroes.cpp)|
-|15|Medium|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|[Solution](/part-01/2_15_spiral-matrix.cpp)|
-|16|Medium|[Rotate Image](https://leetcode.com/problems/rotate-image)|[Solution](/part-01/2_16_rotate-image.cpp)|
-|17|Medium|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)|[Solution](/part-01/2_17_longest-consecutive-sequence.cpp)|
-|18|Medium|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)|[Solution](/part-01/2_18_kth-smallest-element-in-a-sorted-matrix.cpp)|
-|19|Medium|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array)|[Solution](/part-01/2_19_peak-index-in-a-mountain-array.cpp)|
-|20|Medium|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|[Solution](/part-01/2_20_find-minimum-in-rotated-sorted-array.cpp)|
-|21|Medium|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|[Solution](/part-01/2_21_find-peak-element.cpp)|
-|22|Medium|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|[Solution](/part-01/2_22_search-in-rotated-sorted-array.cpp)|
-|23|Medium|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)|[Solution](/part-01/2_23_search-in-rotated-sorted-array-ii.cpp)|
-|24|Medium|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|[Solution](/part-01/2_24_search-a-2d-matrix.cpp)|
-|25|Medium|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|[Solution](/part-01/2_25_search-a-2d-matrix-ii.cpp)|
-|26|Medium|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)|[Solution](/part-01/2_26_find-k-closest-elements.cpp)|
-|27|Medium|[Factor Combinations](https://leetcode.com/problems/factor-combinations)|[Solution](/part-01/2_27_factor-combinations.cpp)|
-|28|Hard|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|[Solution](/part-01/3_28_first-missing-positive.cpp)|
-|29|Hard|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)|[Solution](/part-01/3_29_count-of-range-sum.cpp)|
-|30|Hard|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)|[Solution](/part-01/3_30_median-of-two-sorted-arrays.cpp)|
+|01|Easy|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs)|
+|02|Easy|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|
+|03|Easy|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable)|
+|04|Easy|[Counting Bits](https://leetcode.com/problems/counting-bits)|
+|05|Medium|[Target Sum](https://leetcode.com/problems/target-sum)|
+|06|Medium|[House Robber](https://leetcode.com/problems/house-robber)|
+|07|Medium|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|
+|08|Medium|[House Robber II](https://leetcode.com/problems/house-robber-ii)|
+|09|Medium|[Coin Change](https://leetcode.com/problems/coin-change)|
+|10|Medium|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|
+|11|Medium|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|
+|12|Medium|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|
+|13|Medium|[Word Break](https://leetcode.com/problems/word-break)|
+|14|Medium|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|
+|15|Medium|[Decode Ways](https://leetcode.com/problems/decode-ways)|
+|16|Medium|[Unique Paths](https://leetcode.com/problems/unique-paths)|
+|17|Medium|[Jump Game](https://leetcode.com/problems/jump-game)|
+|18|Medium|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)|
+|19|Medium|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)|
+|20|Medium|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)|
+|21|Medium|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|
+|22|Medium|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|
+|23|Medium|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)|
+|24|Medium|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)|
+|25|Medium|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|
+|26|Medium|[Task Scheduler](https://leetcode.com/problems/task-scheduler)|
+|27|Medium|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|
+|28|Medium|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)|
+|29|Medium|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|
+|30|Medium|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)|
+|31|Medium|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|
+|32|Medium|[Reorganize String](https://leetcode.com/problems/reorganize-string)|
+|33|Medium|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element)|
+|34|Hard|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|
+|35|Hard|[Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists)|
+|36|Hard|[Employee Free Time](https://leetcode.com/problems/employee-free-time)|
+|37|Hard|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)|
+|38|Hard|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii)|
+|39|Hard|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)|
+|40|Hard|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|
+|41|Hard|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median)|

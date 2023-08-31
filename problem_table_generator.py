@@ -20,10 +20,27 @@ import json
 
 # Editable data
 problem_tags_wanted = [
-    "Arrays",
-    "Binary Search",
-    "Bit Manipulation",
-    "Sorting",
+    # Part 1
+    #"Arrays",
+    #"Binary Search",
+    #"Bit Manipulation",
+    #"Sorting",
+
+    # Part 2
+    #"Fast & Slow Pointers",
+    #"In-place reversal of a linked list",
+    #"Two Pointers",
+
+    # Part 3
+    #"BFS",
+    #"DFS",
+    #"Graph",
+    #"Topological Sort",
+
+    # Part 4
+    "Heap",
+    "Greedy",
+    "Dynamic Programming",
 ]
 part = "part-01"
 
@@ -67,7 +84,6 @@ for problem in data:
         difficulty = problem["difficulty"]
         hyphenated_problem_name = str(problem_name).lower().replace(" ", "-")
         display_number = str(serial_number).zfill(2)
-        solution_url = f"/{part}/{difficulty_map[difficulty]}_{display_number}_{hyphenated_problem_name}.cpp"
 
-        print(f"|{display_number}|{difficulty}|[{problem_name}]({problem_url})|[Solution]({solution_url})|", file=open("dump.txt", "a"))
+        print(f"|{display_number}|{difficulty}|[{problem_name}]({problem_url})|", file=open("dump.txt", "a"))
         serial_number+=1
