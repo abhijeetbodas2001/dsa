@@ -2,8 +2,8 @@
 # A `problem` object in the `data.json` file looks like so:
 # {
 #     "id": 0,
-#     "name": "Contains Duplicate",
-#     "url": "https://leetcode.com/problems/contains-duplicate/",
+#     "title": "Contains Duplicate",
+#     "slug": "contains-duplicate",
 #     "pattern": [
 #         "Arrays"
 #     ],
@@ -62,8 +62,8 @@ print("|-|-|-|-|", file=open("dump.txt", "a"))
 serial_number = 1
 for problem in data:
     if  len(set(problem_tags_wanted) & set(problem["pattern"])) > 0:
-        problem_name = problem["name"]
-        problem_url = problem["url"]
+        problem_name = problem["title"]
+        problem_url = "https://leetcode.com/problems/" + problem["slug"]
         difficulty = problem["difficulty"]
         hyphenated_problem_name = str(problem_name).lower().replace(" ", "-")
         display_number = str(serial_number).zfill(2)
