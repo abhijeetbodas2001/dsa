@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <utility>
 using namespace std;
 
 // Incrementation
@@ -55,7 +56,7 @@ int main() {
     qu.push(3);
     qu.size();     // 3
     qu.empty();    // false
-    qu.front();    // returnd 1, does not delete it
+    qu.front();    // returns 1, does not delete it
     qu.pop();      // deletes 1, does not return it
     qu.back();     // 3 (last in)
 
@@ -82,8 +83,9 @@ int main() {
     m["key"] = 101;
     // `find` is same as that of set structure
     // Traversing an unordered map
-    for (auto x : m) {
+    for (auto& x : m) {
         cout << x.first << " " << x.second << endl;     // key <space> 101
+        x.second = 3;   // iterating over references means updating inside loop is OK
     }
 
     return 0;
