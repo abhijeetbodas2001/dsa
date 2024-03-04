@@ -10,7 +10,7 @@ int main() {
 #endif
 
     // Switch
-    bool has_multiple_testcases = 0;
+    bool has_multiple_testcases = 1;
     int num_testcases = 1;
     if (has_multiple_testcases) {
         std::cin >> num_testcases;
@@ -24,5 +24,16 @@ int main() {
 }
 
 void solve() {
-    // code here
+    std::string s;
+    std::cin >> s;
+    int As = 0;
+    for (int i = 0; i < s.length(); i++) {
+        if (s[i] == 'A') {
+            As++;
+        }
+    }
+
+    char ans;
+    ans = As > s.length() - As ? 'A' : 'B';
+    std::cout << ans << "\n";
 }

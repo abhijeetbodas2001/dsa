@@ -10,7 +10,7 @@ int main() {
 #endif
 
     // Switch
-    bool has_multiple_testcases = 0;
+    bool has_multiple_testcases = 1;
     int num_testcases = 1;
     if (has_multiple_testcases) {
         std::cin >> num_testcases;
@@ -24,5 +24,15 @@ int main() {
 }
 
 void solve() {
-    // code here
+    int n;
+    std::cin >> n;
+    int ans = 0;
+    for (int i = 1; i <= n; i++) {
+        int m = i;
+        while (m > 0) {
+            ans = ans + m % 10;
+            m = m / 10;
+        }
+    }
+    std::cout << ans << "\n";
 }

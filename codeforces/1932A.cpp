@@ -10,7 +10,7 @@ int main() {
 #endif
 
     // Switch
-    bool has_multiple_testcases = 0;
+    bool has_multiple_testcases = 1;
     int num_testcases = 1;
     if (has_multiple_testcases) {
         std::cin >> num_testcases;
@@ -24,5 +24,21 @@ int main() {
 }
 
 void solve() {
-    // code here
+    int n;
+    std::cin >> n;
+    std::string s;
+    std::cin >> s;
+
+    int score = s[0] == '@';
+    for (int i = 1; i < n; i++) {
+        if (s[i] == '@') {
+            score++;
+        }
+
+        if (s[i] == '*' && s[i - 1] == '*') {
+            break;
+        }
+    }
+
+    std::cout << score << "\n";
 }
