@@ -1,3 +1,5 @@
+# INCOMPLETE!!
+
 import itertools
 import math
 
@@ -15,12 +17,33 @@ def solve(x: int, y: int, circles: list[tuple[int, int, int]]) -> bool:
     # circle is defined by a (centre_x, center_y, radius) tuple
 
     num_circles = len(circles)
-    intersecting_circles = [set()] * num_circles
-    for i, j in itertools.product(range(num_circles), range(num_circles)):
-        if do_circles_intersect(circles[i], circles[j]):
-            intersecting_circles[i].add(j)
-            intersecting_circles[j].add(i)
+
+    # every circle is a parent of itself
+    parent = list(range(num_circles))
+
+    parent.append(num_circles)      # U
+    parent.append(num_circles+1)    # R
+    parent.append(num_circles+2)    # D
+    parent.append(num_circles+3)    # L
+
+    def find_parent(a: int):
+        if parent[a] == a:
+            return a
+        return find_parent(parent[a])
 
 
+    def union_sets(a: int, b: int):
+        a = find_parent(a)
+        b = find_parent(b)
+        if a != b:
+            parent[a] = b
 
-    pass
+    for c1, c2 in itertools.product(range(num_circles), range(num_circles)):
+        if not do_circles_intersect(circles[c1], circles[c2]):
+            continue
+
+        union_sets(c1, c2)
+
+    for c in range(num_circles):
+        if circle_intersects_top_edge(circles[c]):
+            union_sets(num_circles, c)
