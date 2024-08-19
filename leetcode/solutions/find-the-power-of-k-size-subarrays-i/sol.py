@@ -5,32 +5,34 @@ class Solution:
     def resultsArray(self, nums: List[int], k: int) -> List[int]:
         n = len(nums)
         assert k <= n
+
         if k == 1:
             return nums
 
-        first_sub_array_is_sorted = True
-        for i in range(1, k):
-            if nums[i - 1] >= nums[i]:
-                first_sub_array_is_sorted = False
-
         ans = [nums[k - 1]]
+
+        # current element being processed
         right = k - 1
-        left = 0
-        if not first_sub_array_is_sorted or not (nums[right] - (k-1) == nums[right - k + 1]):
+        # from left to right (both inclusive), elements are consqeutive and sorted
+        left = k-1
+
+        for i in range(k-1, 0, -1):
+            if nums[i - 1] != nums[i] - 1:
+                break
+
+            left = i-1
+
+        if left != 0:
             ans[0] = -1
-
-        if not first_sub_array_is_sorted:
-            left = k-1
-            while left>=0 and nums[left] <= nums[left+1]:
-                left-=1
-
 
         for i in range(k, n):
             right = i
-            if nums[right] <= nums[right - 1]:
+            if nums[right] != nums[right - 1]+1:
                 left = right
+                ans.append(-1)
+                continue
 
-            if (right - left + 1 >= k) and (nums[right] - (k-1) == nums[right - k + 1]):
+            if left <= right - (k-1):
                 ans.append(nums[right])
             else:
                 ans.append(-1)
