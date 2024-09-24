@@ -40,7 +40,7 @@ private:
         }
     }
 
-    int getMaxDepNode() { 
+    int getMaxDepNode() {
         int node = 0;
         int max_dep = depths[0];
 
@@ -97,7 +97,7 @@ public:
         // generate the path, using the parent data saved in `saveDepths`
         vector<int> path;
         while (end != -1) {
-            // if `end` reaches -1, we have compeleted tracing the longest path
+            // if `end` reaches -1, we have completed tracing the longest path
             path.push_back(end);
             end = parent[end];
         }

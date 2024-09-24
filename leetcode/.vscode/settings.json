@@ -1,0 +1,9 @@
+{
+    "[python]": {
+        "editor.inlineSuggest.enabled": false,
+        "editor.quickSuggestions": {
+            "other": "off"
+        }
+    },
+    "python.analysis.typeCheckingMode": "basic"
+}

@@ -3,4 +3,7 @@ def solve():
 
 
 if __name__ == "__main__":
-    solve()
+    num_test_cases = int(input())
+    # num_test_cases = 1
+    for _ in range(num_test_cases): 
+        solve()
