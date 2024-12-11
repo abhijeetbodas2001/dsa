@@ -1,0 +1,28 @@
+    # Part 2 can be optimised
+    # obstacles = set(
+    #     complex(row, col)
+    #     for row, col in itertools.product(range(rows), range(cols))
+    #     if grid[row][col] == "#"
+    # )
+    # obstacles_in_row = [
+    #     [col for col in range(cols) if grid[row][col] == "#"] for row in range(rows)
+    # ]
+    # obstacles_in_col = [
+    #     [row for row in range(rows) if grid[row][col] == "#"] for col in range(cols)
+    # ]
+
+    # print(f"{len(obstacles)=}")  # 848
+    # print(f"{max(rows,cols)=}")  # 130
+    # length of path is 4374
+
+    # Only possible location of obstacle will be points which lie on the path of the
+    # guard already
+    # For each such path, simulate what happens on putting an obstacle at the point
+    # next to the current location of the guard.
+    # In such a simulation, in the worst case, the guard will bounce of all the existing
+    # obstacles plus one. Finding each obstacle when we are at some obstacle will
+    # take log(max(rows, cols)) time in the worst case (do binary search over the
+    # obstacle array).
+    # There will be 4374 such simulations, each taking 848*log(130) operations.
+    # In total there will be close to one million operations, which should be fast.
+
