@@ -79,11 +79,10 @@ def solve():
     # print("Part 2:", ans)
     # print(time.time())
 
-    # Part 2
+
+def part2():
     gives: dict[int, Counter] = {}  # map from value to counter
-    with open("./input.txt", "r") as f:
-        arr = f.read().splitlines()[0]
-    ll = list(map(int, arr.split(" ")))
+    ll = [9694820, 93, 54276, 1304, 314, 664481, 0, 4]
     print(ll)
 
     def cache(num: int) -> dict[int, int]:
@@ -105,7 +104,7 @@ def solve():
         return gives[num]
 
     curr = Counter(ll)
-    for idx in range(75):
+    for idx in range(200):
         new = {}
         for num, count in curr.items():
             for x, y in cache(num).items():
@@ -116,4 +115,4 @@ def solve():
 
 
 if __name__ == "__main__":
-    solve()
+    part2()
